@@ -72,6 +72,9 @@ def get_response_from_finetune_checkpoint(format_prompt, do_print=True):
     return response_text
 
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from transformers import AutoTokenizer
 from os import getenv
 from huggingface_hub import login
